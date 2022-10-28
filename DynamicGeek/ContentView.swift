@@ -1,19 +1,19 @@
-//
-//  ContentView.swift
-//  DynamicGeek
-//
-//  Created by Barrios, Victor on 28/10/22.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    private let viewModel = ContentViewModel()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button("Happy") {
+                viewModel.displayPnj()
+            }
+            
+            Button("Sad") {
+                Task {
+                    await viewModel.updateState()
+                }
+            }
         }
         .padding()
     }

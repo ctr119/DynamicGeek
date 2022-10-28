@@ -11,7 +11,42 @@
 		3EEAEB9F290C12B900BEF30D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAEB9E290C12B900BEF30D /* ContentView.swift */; };
 		3EEAEBA1290C12BA00BEF30D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EEAEBA0290C12BA00BEF30D /* Assets.xcassets */; };
 		3EEAEBA4290C12BA00BEF30D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EEAEBA3290C12BA00BEF30D /* Preview Assets.xcassets */; };
+		3EEAEBAB290C134C00BEF30D /* GeekAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAEBAA290C134C00BEF30D /* GeekAttributes.swift */; };
+		3EEAEBAD290C158600BEF30D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAEBAC290C158600BEF30D /* ContentViewModel.swift */; };
+		3EEAEBB5290C190F00BEF30D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEAEBB4290C190F00BEF30D /* WidgetKit.framework */; };
+		3EEAEBB7290C190F00BEF30D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEAEBB6290C190F00BEF30D /* SwiftUI.framework */; };
+		3EEAEBBA290C190F00BEF30D /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAEBB9290C190F00BEF30D /* Widgets.swift */; };
+		3EEAEBBC290C190F00BEF30D /* PnjCardLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAEBBB290C190F00BEF30D /* PnjCardLiveActivity.swift */; };
+		3EEAEBC1290C191000BEF30D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EEAEBC0290C191000BEF30D /* Assets.xcassets */; };
+		3EEAEBC3290C191000BEF30D /* PnjCard.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAEBBF290C190F00BEF30D /* PnjCard.intentdefinition */; };
+		3EEAEBC4290C191000BEF30D /* PnjCard.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAEBBF290C190F00BEF30D /* PnjCard.intentdefinition */; };
+		3EEAEBC7290C191000BEF30D /* PnjCardExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3EEAEBB2290C190F00BEF30D /* PnjCardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3EEAEBCC290C198700BEF30D /* GeekAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAEBAA290C134C00BEF30D /* GeekAttributes.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EEAEBC5290C191000BEF30D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EEAEB91290C12B900BEF30D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EEAEBB1290C190F00BEF30D;
+			remoteInfo = PnjCardExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3EEAEBCB290C191000BEF30D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3EEAEBC7290C191000BEF30D /* PnjCardExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3EEAEB99290C12B900BEF30D /* DynamicGeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicGeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +54,17 @@
 		3EEAEB9E290C12B900BEF30D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3EEAEBA0290C12BA00BEF30D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EEAEBA3290C12BA00BEF30D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3EEAEBAA290C134C00BEF30D /* GeekAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeekAttributes.swift; sourceTree = "<group>"; };
+		3EEAEBAC290C158600BEF30D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		3EEAEBB2290C190F00BEF30D /* PnjCardExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PnjCardExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EEAEBB4290C190F00BEF30D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		3EEAEBB6290C190F00BEF30D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		3EEAEBB9290C190F00BEF30D /* Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
+		3EEAEBBB290C190F00BEF30D /* PnjCardLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PnjCardLiveActivity.swift; sourceTree = "<group>"; };
+		3EEAEBBF290C190F00BEF30D /* PnjCard.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = PnjCard.intentdefinition; sourceTree = "<group>"; };
+		3EEAEBC0290C191000BEF30D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EEAEBC2290C191000BEF30D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EEAEBCD290C802600BEF30D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +75,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3EEAEBAF290C190F00BEF30D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EEAEBB7290C190F00BEF30D /* SwiftUI.framework in Frameworks */,
+				3EEAEBB5290C190F00BEF30D /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				3EEAEB9B290C12B900BEF30D /* DynamicGeek */,
+				3EEAEBB8290C190F00BEF30D /* PnjCard */,
+				3EEAEBB3290C190F00BEF30D /* Frameworks */,
 				3EEAEB9A290C12B900BEF30D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				3EEAEB99290C12B900BEF30D /* DynamicGeek.app */,
+				3EEAEBB2290C190F00BEF30D /* PnjCardExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +109,11 @@
 		3EEAEB9B290C12B900BEF30D /* DynamicGeek */ = {
 			isa = PBXGroup;
 			children = (
-				3EEAEB9C290C12B900BEF30D /* DynamicGeekApp.swift */,
+				3EEAEBCD290C802600BEF30D /* Info.plist */,
 				3EEAEB9E290C12B900BEF30D /* ContentView.swift */,
+				3EEAEBAC290C158600BEF30D /* ContentViewModel.swift */,
+				3EEAEB9C290C12B900BEF30D /* DynamicGeekApp.swift */,
+				3EEAEBAA290C134C00BEF30D /* GeekAttributes.swift */,
 				3EEAEBA0290C12BA00BEF30D /* Assets.xcassets */,
 				3EEAEBA2290C12BA00BEF30D /* Preview Content */,
 			);
@@ -67,6 +128,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3EEAEBB3290C190F00BEF30D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EEAEBB4290C190F00BEF30D /* WidgetKit.framework */,
+				3EEAEBB6290C190F00BEF30D /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3EEAEBB8290C190F00BEF30D /* PnjCard */ = {
+			isa = PBXGroup;
+			children = (
+				3EEAEBB9290C190F00BEF30D /* Widgets.swift */,
+				3EEAEBBB290C190F00BEF30D /* PnjCardLiveActivity.swift */,
+				3EEAEBBF290C190F00BEF30D /* PnjCard.intentdefinition */,
+				3EEAEBC0290C191000BEF30D /* Assets.xcassets */,
+				3EEAEBC2290C191000BEF30D /* Info.plist */,
+			);
+			path = PnjCard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +159,34 @@
 				3EEAEB95290C12B900BEF30D /* Sources */,
 				3EEAEB96290C12B900BEF30D /* Frameworks */,
 				3EEAEB97290C12B900BEF30D /* Resources */,
+				3EEAEBCB290C191000BEF30D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3EEAEBC6290C191000BEF30D /* PBXTargetDependency */,
 			);
 			name = DynamicGeek;
 			productName = DynamicGeek;
 			productReference = 3EEAEB99290C12B900BEF30D /* DynamicGeek.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3EEAEBB1290C190F00BEF30D /* PnjCardExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EEAEBC8290C191000BEF30D /* Build configuration list for PBXNativeTarget "PnjCardExtension" */;
+			buildPhases = (
+				3EEAEBAE290C190F00BEF30D /* Sources */,
+				3EEAEBAF290C190F00BEF30D /* Frameworks */,
+				3EEAEBB0290C190F00BEF30D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PnjCardExtension;
+			productName = PnjCardExtension;
+			productReference = 3EEAEBB2290C190F00BEF30D /* PnjCardExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +199,9 @@
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					3EEAEB98290C12B900BEF30D = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					3EEAEBB1290C190F00BEF30D = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
@@ -116,6 +220,7 @@
 			projectRoot = "";
 			targets = (
 				3EEAEB98290C12B900BEF30D /* DynamicGeek */,
+				3EEAEBB1290C190F00BEF30D /* PnjCardExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +235,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3EEAEBB0290C190F00BEF30D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EEAEBC1290C191000BEF30D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +250,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EEAEBAD290C158600BEF30D /* ContentViewModel.swift in Sources */,
 				3EEAEB9F290C12B900BEF30D /* ContentView.swift in Sources */,
+				3EEAEBAB290C134C00BEF30D /* GeekAttributes.swift in Sources */,
 				3EEAEB9D290C12B900BEF30D /* DynamicGeekApp.swift in Sources */,
+				3EEAEBC4290C191000BEF30D /* PnjCard.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EEAEBAE290C190F00BEF30D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EEAEBCC290C198700BEF30D /* GeekAttributes.swift in Sources */,
+				3EEAEBBA290C190F00BEF30D /* Widgets.swift in Sources */,
+				3EEAEBBC290C190F00BEF30D /* PnjCardLiveActivity.swift in Sources */,
+				3EEAEBC3290C191000BEF30D /* PnjCard.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EEAEBC6290C191000BEF30D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EEAEBB1290C190F00BEF30D /* PnjCardExtension */;
+			targetProxy = 3EEAEBC5290C191000BEF30D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3EEAEBA5290C12BA00BEF30D /* Debug */ = {
@@ -262,6 +397,7 @@
 		3EEAEBA8290C12BA00BEF30D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -270,6 +406,8 @@
 				DEVELOPMENT_TEAM = WAY234M8W5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DynamicGeek/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -291,6 +429,7 @@
 		3EEAEBA9290C12BA00BEF30D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +438,8 @@
 				DEVELOPMENT_TEAM = WAY234M8W5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DynamicGeek/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -311,6 +452,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vbarr.DynamicGeek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3EEAEBC9290C191000BEF30D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WAY234M8W5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PnjCard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PnjCard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vbarr.DynamicGeek.PnjCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3EEAEBCA290C191000BEF30D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WAY234M8W5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PnjCard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PnjCard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vbarr.DynamicGeek.PnjCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,6 +529,15 @@
 			buildConfigurations = (
 				3EEAEBA8290C12BA00BEF30D /* Debug */,
 				3EEAEBA9290C12BA00BEF30D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EEAEBC8290C191000BEF30D /* Build configuration list for PBXNativeTarget "PnjCardExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EEAEBC9290C191000BEF30D /* Debug */,
+				3EEAEBCA290C191000BEF30D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
