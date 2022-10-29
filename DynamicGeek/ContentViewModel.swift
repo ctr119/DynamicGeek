@@ -11,6 +11,7 @@ class ContentViewModel {
     
     func displayPnj() {
         let attr = GeekAttributes(pnjName: "Mario")
+        // NOTE: A huge picture, makes the request to fail
         let initialState = GeekAttributes.GeekState(mood: .happy, pnjDescription: "Our beloved plumber <3")
         
         do {
@@ -21,6 +22,7 @@ class ContentViewModel {
     }
     
     func updateState() async {
+        // NOTE: A huge picture, makes the request to fail
         await activity?.update(using: GeekAttributes.GeekState(mood: .sad, pnjDescription: "Sad Mario..."))
     }
     
