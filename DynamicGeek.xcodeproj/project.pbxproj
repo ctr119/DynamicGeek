@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E5B2B172915C43E00A9710C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3E5B2B162915C43E00A9710C /* Kingfisher */; };
 		3EEAEB9D290C12B900BEF30D /* DynamicGeekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAEB9C290C12B900BEF30D /* DynamicGeekApp.swift */; };
 		3EEAEB9F290C12B900BEF30D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAEB9E290C12B900BEF30D /* ContentView.swift */; };
 		3EEAEBA1290C12BA00BEF30D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EEAEBA0290C12BA00BEF30D /* Assets.xcassets */; };
@@ -79,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E5B2B172915C43E00A9710C /* Kingfisher in Frameworks */,
 				3EEAEBD0290F237700BEF30D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +190,7 @@
 			name = DynamicGeek;
 			packageProductDependencies = (
 				3EEAEBCF290F237700BEF30D /* Alamofire */,
+				3E5B2B162915C43E00A9710C /* Kingfisher */,
 			);
 			productName = DynamicGeek;
 			productReference = 3EEAEB99290C12B900BEF30D /* DynamicGeek.app */;
@@ -239,6 +242,7 @@
 			mainGroup = 3EEAEB90290C12B900BEF30D;
 			packageReferences = (
 				3EEAEBCE290F237700BEF30D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				3E5B2B152915C43E00A9710C /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 3EEAEB9A290C12B900BEF30D /* Products */;
 			projectDirPath = "";
@@ -573,6 +577,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3E5B2B152915C43E00A9710C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		3EEAEBCE290F237700BEF30D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -584,6 +596,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3E5B2B162915C43E00A9710C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E5B2B152915C43E00A9710C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		3EEAEBCF290F237700BEF30D /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3EEAEBCE290F237700BEF30D /* XCRemoteSwiftPackageReference "Alamofire" */;

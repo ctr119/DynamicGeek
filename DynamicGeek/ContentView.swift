@@ -1,21 +1,25 @@
 import SwiftUI
+import Kingfisher
 
 struct ContentView: View {
-    private let viewModel = ContentViewModel()
+    @ObservedObject var viewModel = ContentViewModel(pkmnDataSource: PkmnDataSource())
     
     var body: some View {
         VStack {
-            Button("Happy") {
-                viewModel.displayPnj()
-            }
-            
-            Button("Sad") {
-                Task {
-                    await viewModel.updateState()
-                }
+            ForEach(viewModel.pokemons) { pkmnDTO in
+                KFImage.url(URL(string: pkmnDTO.sprites.imageUrl))
+                    .padding(10)
+                    .onTapGesture {
+                        // TODO: Continue here
+                        viewModel.displayPnj()
+                    }
             }
         }
-        .padding()
+        .onAppear {
+            Task {
+                await viewModel.onAppear()
+            }
+        }
     }
 }
 

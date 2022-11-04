@@ -8,7 +8,10 @@ struct SpritesDTO: Codable {
     }
 }
 
-struct PkmnDTO: Codable {
+struct PkmnDTO: Codable, Identifiable {
+    var id: String {
+        return name
+    }
     let name: String
     let sprites: SpritesDTO
 }

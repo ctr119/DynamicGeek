@@ -6,8 +6,36 @@ import ActivityKit
 // https://developer.apple.com/documentation/activitykit
 // https://developer.apple.com/documentation/activitykit/displaying-live-data-with-live-activities
 
-class ContentViewModel {
+class ContentViewModel: ObservableObject {
+    @Published var pokemons: [PkmnDTO] = []
+    
+    private let pokemonNames = ["bulbasaur", "charmander", "squirtle", "pikachu"]
+    private let pkmnDataSource: PkmnDataSource
+    
     private var activity: Activity<GeekAttributes>?
+    
+    init(pkmnDataSource: PkmnDataSource) {
+        self.pkmnDataSource = pkmnDataSource
+    }
+    
+    func onAppear() async {
+        do {
+            let pokemons = try await withThrowingTaskGroup(of: PkmnDTO.self) { taskGroup in
+                for name in pokemonNames {
+                    taskGroup.addTask {
+                        try await self.pkmnDataSource.getPokemon(name: name)
+                    }
+                }
+                return try await taskGroup.reduce(into: [PkmnDTO](), { $0.append($1) })
+            }
+            
+            DispatchQueue.main.async {
+                self.pokemons = pokemons
+            }
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
     
     func displayPnj() {
         let attr = GeekAttributes(pnjName: "Mario")
