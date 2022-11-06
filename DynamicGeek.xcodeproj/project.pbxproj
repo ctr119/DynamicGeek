@@ -29,6 +29,7 @@
 		3EEAEBD7290FB1B200BEF30D /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAEBD6290FB1B200BEF30D /* DataError.swift */; };
 		3EFD828F291851EA00F0ED3D /* ExpandedLeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFD828D29184F1F00F0ED3D /* ExpandedLeadingView.swift */; };
 		3EFD82922918594A00F0ED3D /* ExpandedTrailingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFD82902918592500F0ED3D /* ExpandedTrailingView.swift */; };
+		3EFD829429185C0B00F0ED3D /* ExpandedBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFD829329185C0B00F0ED3D /* ExpandedBottomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		3EEAEBD6290FB1B200BEF30D /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
 		3EFD828D29184F1F00F0ED3D /* ExpandedLeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedLeadingView.swift; sourceTree = "<group>"; };
 		3EFD82902918592500F0ED3D /* ExpandedTrailingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedTrailingView.swift; sourceTree = "<group>"; };
+		3EFD829329185C0B00F0ED3D /* ExpandedBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedBottomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			children = (
 				3EFD828D29184F1F00F0ED3D /* ExpandedLeadingView.swift */,
 				3EFD82902918592500F0ED3D /* ExpandedTrailingView.swift */,
+				3EFD829329185C0B00F0ED3D /* ExpandedBottomView.swift */,
 			);
 			path = LiveActivityViews;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				3EEAEBCC290C198700BEF30D /* GeekAttributes.swift in Sources */,
 				3EFD82922918594A00F0ED3D /* ExpandedTrailingView.swift in Sources */,
 				3EFD828F291851EA00F0ED3D /* ExpandedLeadingView.swift in Sources */,
+				3EFD829429185C0B00F0ED3D /* ExpandedBottomView.swift in Sources */,
 				3EEAEBBA290C190F00BEF30D /* Widgets.swift in Sources */,
 				3EEAEBBC290C190F00BEF30D /* PnjCardLiveActivity.swift in Sources */,
 				3EEAEBC3290C191000BEF30D /* PnjCard.intentdefinition in Sources */,

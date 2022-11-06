@@ -33,7 +33,7 @@ struct PnjCardLiveActivity: Widget {
                 }
                 
                 DynamicIslandExpandedRegion(.bottom) {
-                    
+                    ExpandedBottomView()
                 }
             } compactLeading: {
                 Image("pokemonMaster")
