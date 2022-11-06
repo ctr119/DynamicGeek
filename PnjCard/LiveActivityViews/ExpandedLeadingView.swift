@@ -26,7 +26,7 @@ struct ExpandedLeadingView: View {
     }
     
     private func getPokemonImage(data: Data) -> some View {
-        let size: CGFloat = 85
+        let size: CGFloat = 65
         let uiImage = UIImage(data: data) ?? UIImage()
         
         return Image(uiImage: uiImage)
