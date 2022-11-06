@@ -10,8 +10,7 @@ struct ContentView: View {
                 KFImage.url(URL(string: pkmnDTO.sprites.imageUrl))
                     .padding(10)
                     .onTapGesture {
-                        // TODO: Continue here
-                        viewModel.displayPnj()
+                        viewModel.startActivity(for: pkmnDTO)
                     }
             }
         }

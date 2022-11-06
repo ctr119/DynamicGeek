@@ -1,47 +1,68 @@
 import ActivityKit
 import WidgetKit
 import SwiftUI
+import UIKit
 
 struct PnjCardLiveActivity: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: GeekAttributes.self) { context in
             // Lock screen/banner UI goes here
             VStack {
-                Text("Hi it's me! \(context.attributes.pnjName)!")
+                Text("You got a new Pókemon waiting for you! <3")
             }
             .activitySystemActionForegroundColor(Color.black) // Auxiliar text by swiping
             .activityBackgroundTint(Color.cyan)
+            .padding()
             
         } dynamicIsland: { context in
             DynamicIsland {
                 // Expanded UI goes here.  Compose the expanded UI through
                 // various regions, like leading/trailing/center/bottom
                 DynamicIslandExpandedRegion(.leading) {
-                    Text(context.attributes.pnjName)
+                    VStack(alignment: .leading) {
+                        Label {
+                            Text("\(context.state.pokemonName.capitalized) appeared!")
+                        } icon: {
+                            getPokemonImage(context: context)
+                                .scaledToFit()
+                        }
+                    }
+                    .dynamicIsland(verticalPlacement: .belowIfTooWide)
                 }
+                
                 DynamicIslandExpandedRegion(.trailing) {
-                    Text(context.attributes.pnjName)
+                    
                 }
                 DynamicIslandExpandedRegion(.center) {
-                    Image("\(context.attributes.pnjName)-\(context.state.mood.toString)")
-                        .resizable()
-                        .frame(width: 50, height: 60)
+                    
                 }
                 DynamicIslandExpandedRegion(.bottom) {
-                    Text(context.state.pnjDescription)
+                    
                 }
             } compactLeading: {
-                Label {
-                    Text(context.attributes.pnjName)
-                } icon: {
-                    Image(systemName: "bag")
-                }
+                Image("pokemonMaster")
+                    .resizable()
+                    .frame(width: 28, height: 28)
             } compactTrailing: {
-                Text("*")
+                pokeballImage
             } minimal: {
-                Text("-")
+                pokeballImage
             }
             .keylineTint(.cyan) // compact and minimal - does not work
         }
+    }
+    
+    private func getPokemonImage(context: ActivityViewContext<GeekAttributes>) -> some View {
+        let size: CGFloat = 85
+        
+        return Image(uiImage: UIImage(data: context.state.pokemonImageData) ?? UIImage())
+            .resizable()
+            .frame(width: size, height: size)
+    }
+    
+    private var pokeballImage: some View {
+        Image("pokeball")
+            .resizable()
+            .frame(width: 25, height: 25)
     }
 }

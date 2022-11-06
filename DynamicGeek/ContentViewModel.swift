@@ -1,5 +1,6 @@
 import Foundation
 import ActivityKit
+import Kingfisher
 
 // DOCU
 // https://betterprogramming.pub/explore-the-dynamic-island-activitykit-tutorial-a7b8e3f9e234
@@ -37,6 +38,31 @@ class ContentViewModel: ObservableObject {
         }
     }
     
+    func startActivity(for pokemon: PkmnDTO) {
+        guard let url = URL(string: pokemon.sprites.imageUrl) else { return }
+        
+        Task {
+            do {
+                if activity != nil {
+                    await activity?.end(dismissalPolicy: .immediate)
+                }
+                
+                let data = try await URLSession.shared.data(from: url).0
+                
+                let attributes = GeekAttributes(pokemonMasterName: "Ash Ketchup")
+                let initialState = GeekAttributes.GeekState(pokemonName: pokemon.name,
+                                                            pokemonImageData: data)
+                
+                // There is no need to start an activity from a Task.
+                // This is only for the use case of downloading the image for getting its Data representation for the Widget.
+                activity = try Activity<GeekAttributes>.request(attributes: attributes, contentState: initialState)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    /*
     func displayPnj() {
         let attr = GeekAttributes(pnjName: "Mario")
         // NOTE: A huge picture, makes the request to fail
@@ -57,4 +83,5 @@ class ContentViewModel: ObservableObject {
     func stop() async {
         await activity?.end()
     }
+    */
 }
