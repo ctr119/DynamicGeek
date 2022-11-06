@@ -19,23 +19,19 @@ struct PnjCardLiveActivity: Widget {
                 // Expanded UI goes here.  Compose the expanded UI through
                 // various regions, like leading/trailing/center/bottom
                 DynamicIslandExpandedRegion(.leading) {
-                    VStack(alignment: .leading) {
-                        Label {
-                            Text("\(context.state.pokemonName.capitalized) appeared!")
-                        } icon: {
-                            getPokemonImage(context: context)
-                                .scaledToFit()
-                        }
-                    }
+                    ExpandedLeadingView(model: .init(pokemonName: context.state.pokemonName,
+                                                     pokemonImageData: context.state.pokemonImageData))
                     .dynamicIsland(verticalPlacement: .belowIfTooWide)
                 }
                 
                 DynamicIslandExpandedRegion(.trailing) {
                     
                 }
+                
                 DynamicIslandExpandedRegion(.center) {
                     
                 }
+                
                 DynamicIslandExpandedRegion(.bottom) {
                     
                 }

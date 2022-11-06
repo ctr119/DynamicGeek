@@ -27,6 +27,7 @@
 		3EEAEBD3290F25CD00BEF30D /* PkmnDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAEBD2290F25CD00BEF30D /* PkmnDTO.swift */; };
 		3EEAEBD5290F274700BEF30D /* PkmnDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAEBD4290F274700BEF30D /* PkmnDataSource.swift */; };
 		3EEAEBD7290FB1B200BEF30D /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAEBD6290FB1B200BEF30D /* DataError.swift */; };
+		3EFD828F291851EA00F0ED3D /* ExpandedLeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFD828D29184F1F00F0ED3D /* ExpandedLeadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		3EEAEBD2290F25CD00BEF30D /* PkmnDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PkmnDTO.swift; sourceTree = "<group>"; };
 		3EEAEBD4290F274700BEF30D /* PkmnDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PkmnDataSource.swift; sourceTree = "<group>"; };
 		3EEAEBD6290FB1B200BEF30D /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		3EFD828D29184F1F00F0ED3D /* ExpandedLeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedLeadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,11 +153,12 @@
 		3EEAEBB8290C190F00BEF30D /* PnjCard */ = {
 			isa = PBXGroup;
 			children = (
-				3EEAEBB9290C190F00BEF30D /* Widgets.swift */,
-				3EEAEBBB290C190F00BEF30D /* PnjCardLiveActivity.swift */,
 				3EEAEBBF290C190F00BEF30D /* PnjCard.intentdefinition */,
-				3EEAEBC0290C191000BEF30D /* Assets.xcassets */,
 				3EEAEBC2290C191000BEF30D /* Info.plist */,
+				3EEAEBBB290C190F00BEF30D /* PnjCardLiveActivity.swift */,
+				3EEAEBB9290C190F00BEF30D /* Widgets.swift */,
+				3EEAEBC0290C191000BEF30D /* Assets.xcassets */,
+				3EFD828C29184EDD00F0ED3D /* LiveActivityViews */,
 			);
 			path = PnjCard;
 			sourceTree = "<group>";
@@ -168,6 +171,14 @@
 				3EEAEBD2290F25CD00BEF30D /* PkmnDTO.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		3EFD828C29184EDD00F0ED3D /* LiveActivityViews */ = {
+			isa = PBXGroup;
+			children = (
+				3EFD828D29184F1F00F0ED3D /* ExpandedLeadingView.swift */,
+			);
+			path = LiveActivityViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EEAEBCC290C198700BEF30D /* GeekAttributes.swift in Sources */,
+				3EFD828F291851EA00F0ED3D /* ExpandedLeadingView.swift in Sources */,
 				3EEAEBBA290C190F00BEF30D /* Widgets.swift in Sources */,
 				3EEAEBBC290C190F00BEF30D /* PnjCardLiveActivity.swift in Sources */,
 				3EEAEBC3290C191000BEF30D /* PnjCard.intentdefinition in Sources */,
