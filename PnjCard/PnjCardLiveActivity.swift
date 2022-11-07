@@ -7,11 +7,20 @@ struct PnjCardLiveActivity: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: GeekAttributes.self) { context in
             // Lock screen/banner UI goes here
-            VStack {
-                Text("You got a new Pókemon waiting for you! <3")
+            HStack {
+                Text("You have walked 1 km, yay!\nA new Pókemon appeared!")
+                    .lineLimit(2)
+                    .font(.subheadline)
+                    .fontDesign(.monospaced)
+                
+                Spacer()
+                
+                pokemonMaster
+                    .frame(width: 70, height: 70)
             }
             .activitySystemActionForegroundColor(Color.black) // Auxiliar text by swiping
-            .activityBackgroundTint(Color.cyan)
+            // TODO: Introduce Pokemon Colour Edition
+            .activityBackgroundTint(Color.cyan) // TODO: Change the color based on the Pokemon Edition you select
             .padding()
             
         } dynamicIsland: { context in
@@ -36,9 +45,7 @@ struct PnjCardLiveActivity: Widget {
                     ExpandedBottomView()
                 }
             } compactLeading: {
-                Image("pokemonMaster")
-                    .resizable()
-                    .frame(width: 28, height: 28)
+                pokemonMaster
             } compactTrailing: {
                 pokeballImage
             } minimal: {
@@ -60,5 +67,11 @@ struct PnjCardLiveActivity: Widget {
         Image("pokeball")
             .resizable()
             .frame(width: 25, height: 25)
+    }
+    
+    private var pokemonMaster: some View {
+        Image("pokemonMaster")
+            .resizable()
+            .frame(width: 28, height: 28)
     }
 }
